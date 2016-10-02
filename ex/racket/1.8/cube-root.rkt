@@ -1,12 +1,13 @@
 #lang racket
 
 (define (cube-root n)
-  (curt-iter 1.0 n))
-
-(define (curt-iter guess x)
+  ((if (< n 0) - +)
+   (cube-root-iter 1.0 (abs n))))
+       
+(define (cube-root-iter guess x)
   (if (good-enough? guess x)
       guess
-      (curt-iter (improve guess x) x)))
+      (cube-root-iter (improve guess x) x)))
 
 (define (good-enough? guess x)
   (< (abs (- (cube guess) x))
