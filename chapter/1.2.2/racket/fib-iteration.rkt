@@ -5,5 +5,14 @@
 
 (define (fib-iter a b n)
   (if (zero? n)
-      (+ a b)
+      a
       (fib-iter (+ a b) a (sub1 n))))
+
+
+
+#|
+; generate a fibonacci sequence
+
+(map (λ (x) (fib x))
+     (range 10))
+|#
