@@ -16,6 +16,12 @@ as following a pattern that is, say, linearly recursive, we are speaking
 about how the process evolves, not about the syntax of how a procedure
 is writen.
 
+### Ackermann Function
+[Ackermann Function](https://en.wikipedia.org/wiki/Ackermann_function)
+> All [primitive recursive](https://en.wikipedia.org/wiki/Primitive_recursive_function)
+ functions are [total and computable](https://en.wikipedia.org/wiki/Computable_function), 
+but the Ackermann function illustrates that 
+not all total computable functions are primitive recursive.
 
 ## Eggs
 
