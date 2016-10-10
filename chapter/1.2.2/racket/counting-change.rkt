@@ -3,11 +3,11 @@
 #|
 kinds of coins:
 ------------------
-half-dollar  1/2
-quarter      1/4
-dime         1/10
-nickel       1/20
 pennie       1/100
+nickel       1/20
+dime         1/10
+quarter      1/4
+half-dollar  1/2
 |#
 
 (define (count-change amount)
