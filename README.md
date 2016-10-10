@@ -20,6 +20,8 @@ $ racket
 > (square 2)
 ```
 
+## Chapter
+
 ### 1.2.1
 
 #### Recursive Process vs. Recursive Procedure
