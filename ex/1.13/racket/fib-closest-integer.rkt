@@ -13,8 +13,9 @@
 (define (fib-closest-integer n)
   (inexact->exact (round (/ (expt φ n) (sqrt 5)))))
 
-(define (diff? n)
-  (not (zero? (- (fib n) (fib-closest-integer n)))))
+(define (closest? n)
+  (zero? (- (fib n) (fib-closest-integer n))))
+
 
 #|
 (map (λ (x) (fib x)) (range 20))
