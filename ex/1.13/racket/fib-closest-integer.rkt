@@ -20,5 +20,5 @@
 #|
 (map (λ (x) (fib x)) (range 20))
 (map (λ (x) (fib-closest-integer x)) (range 20))
-(map (λ (x) (diff? x)) (range 20))
+(map (λ (x) (closest? x)) (range 20))
 |#
