@@ -1,13 +1,11 @@
 #lang racket
 
 (define (fib n)
-  (fib-iter 0 1 n))
-
-(define (fib-iter a b n)
-  (if (zero? n)
-      a
-      (fib-iter (+ a b) a (sub1 n))))
-
+  (define (iter a b n)
+    (if (zero? n)
+        b
+        (iter (+ a b) a (sub1 n))))
+  (iter 1 0 n))
 
 
 #|
