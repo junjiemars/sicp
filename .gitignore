@@ -1,2 +1,7 @@
 **/*.rkt~
 *.bak
+_region_.*
+*.dvi
+*.log
+*.pdf
+*.aux
