@@ -3,6 +3,7 @@
 \documentclass{article}
 
 \usepackage{times}
+\usepackage{amsmath}
 
 \begin{document}
 
@@ -16,12 +17,27 @@
 Focus on the math parts
 \end{abstract}
 
-\section*{Maths Environments \& Samples}
-
 
 \section*{1.2 Procedures and the Processes They Generate}
 
 \subsection*{1.2.4 Exponentiation}
+Consider computing the exponential of a given number $n$ based on $b$.
+\begin{align*}
+b^n &= b \cdot b^{n-1},\\
+b^0 &= 1,
+\end{align*}
+This is a linear recursive process, which requires $\Theta(n)$ steps and $\Theta(n)$ spaces.\\
+\\
+We can compute exponentials in $\Theta(log\: n)$ steps by using successive squaring.
+\begin{align*}
+b^n &= (b^{\frac{n}{2}})^2 && \text{if } n \text{ is even,}\\
+b^n &= b \cdot b^{n-1} && \text{if } n \text{ is odd.}
+\end{align*}
+Translate the above computing to iterative process.
+\begin{align*}
+b^n &= (b^2)^{\frac{n}{2}} && \text{if } n \text{ is even,}\\
+b^n &= b \cdot (b^2)^{\frac{n-1}{2}} && \text{if } n \text{ is odd.}
+\end{align*}
 
 
 \end{document}
