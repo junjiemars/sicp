@@ -6,3 +6,4 @@ _region_.*
 *.pdf
 *.aux
 **/*.fasl
+README.md~
