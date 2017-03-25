@@ -10,6 +10,7 @@
         (else (cons x set))))
 
 (define (intersection-set set1 set2)
+  "Computes the intersection of two sets, which is set containing each element."
   (cond ((or (null? set1) (null? set2)) null)
         ((element-of-set? (car set1) set2)
          (cons (car set1)
