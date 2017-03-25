@@ -27,7 +27,11 @@ Set as ordered list
 
 (define (intersection-set set1 set2)
   (cond ((or (null? set1) (null? set2)) '())
-        ((element-of-set? (car set1) set2)
-         (cons (car set1)
-               (intersection-set (cdr set1) set2)))
-        (else (intersection-set (cdr set1) set2))))
+        (else
+         (let ((x1 (car set1))
+               (x2 (car set2)))
+           (cond ((= x1 x2)
+                  (cons x1 (intersection-set (cdr set1) (cdr set2))))
+                 ((< x1 x2)
+                  (intersection-set (cdr set1) set2))
+                 (else (intersection-set set1 (cdr set2))))))))
